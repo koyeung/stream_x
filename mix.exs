@@ -33,10 +33,10 @@ defmodule StreamX.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:ex_doc,  ">= 0.0.0", only: :dev},
-      {:earmark, ">= 0.0.0", only: :dev},
+      {:ex_doc,  ">= 0.0.0", only: [:dev, :docs]},
+      {:earmark, ">= 0.0.0", only: [:dev, :docs]},
 
-      {:inch_ex, "~> 0.5.1", only: :dev},
+      {:inch_ex, "~> 0.5.1", only: :docs},
     ]
   end
 

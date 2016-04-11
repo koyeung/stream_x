@@ -1,6 +1,7 @@
 # StreamX 
 
-[![Build Status](https://travis-ci.org/koyeung/stream_x.svg?branch=master)](https://travis-ci.org/koyeung/stream_x) [![Inline docs](http://inch-ci.org/github/koyeung/stream_x.svg)](http://inch-ci.org/github/koyeung/stream_x)
+[![Build Status](https://travis-ci.org/koyeung/stream_x.svg?branch=master)](https://travis-ci.org/koyeung/stream_x) 
+[![Inline docs](http://inch-ci.org/github/koyeung/stream_x.svg)](http://inch-ci.org/github/koyeung/stream_x)
 
 Extra Elixir Stream utilities
 
