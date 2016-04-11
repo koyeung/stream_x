@@ -5,8 +5,10 @@ otp_release:
   - 18.0
 sudo: false
 before_script:
-  - mix deps.get
+  - mix deps.get --only test
 script:
   - mix test
 after_script:
   - mix docs
+  - mix deps.get --only dev
+  - MIX_ENV=dev mix inch.report

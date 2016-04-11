@@ -35,6 +35,8 @@ defmodule StreamX.Mixfile do
     [
       {:ex_doc,  ">= 0.0.0", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
+
+      {:inch_ex, "~> 0.5.1", only: :dev},
     ]
   end
 
