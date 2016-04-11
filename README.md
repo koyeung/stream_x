@@ -1,4 +1,4 @@
-# StreamX
+# StreamX [![Build Status](https://travis-ci.org/koyeung/stream_x.svg?branch=master)](https://travis-ci.org/koyeung/stream_x)
 
 Extra Elixir Stream utilities
 
