@@ -8,10 +8,19 @@ defmodule StreamX.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      description: description,
-     package: package,
      deps: deps,
+
+     # metadata for Hex publishing
+     package: package,
+     
+     # setup for ExDoc
      source_url: "https://github.com/koyeung/stream_x",
      docs: &docs/0,
+
+     # ExCoveralls
+     test_coverage: [tool: ExCoveralls],
+     preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test],
+     
     ]
   end
 
@@ -33,10 +42,15 @@ defmodule StreamX.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:ex_doc,  ">= 0.0.0", only: [:dev, :docs]},
-      {:earmark, ">= 0.0.0", only: [:dev, :docs]},
+      # ExDoc - produces HTML and online documentation for Elixir projects
+      {:ex_doc,  ">= 0.11.4", only: [:dev, :docs]},
+      {:earmark, ">= 0.2.1", only: [:dev, :docs]},
 
+      # Mix task that gives you hints where to improve your inline docs
       {:inch_ex, "~> 0.5.1", only: :docs},
+
+      # Coverage report tool for Elixir with coveralls.io integration
+      {:excoveralls, "~> 0.5.2", only: :test},
     ]
   end
 
@@ -45,7 +59,10 @@ defmodule StreamX.Mixfile do
     Extra Elixir Stream utilities
     """
   end
-  
+
+  #
+  # metadata for publishing Hex package
+  #
   defp package do
     [
         maintainers: ["King-On Yeung"],
@@ -54,6 +71,9 @@ defmodule StreamX.Mixfile do
     ]
   end
 
+  #
+  # metadata for ExDoc
+  #
   defp docs do
     {ref, 0} = System.cmd("git", ["rev-parse", "--verify", "--quiet", "HEAD"])
     [
