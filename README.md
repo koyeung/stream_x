@@ -6,7 +6,7 @@
 
 Extra Elixir Stream utilities
 
-* e.g. `StreamX.transform` support switching reducer on-the-fly.
+* e.g. `StreamX.transform` support switching reducer after each reducer call.
 
 ## Installation
 
