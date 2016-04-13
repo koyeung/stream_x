@@ -51,6 +51,12 @@ defmodule StreamX.Mixfile do
 
       # Coverage report tool for Elixir with coveralls.io integration
       {:excoveralls, "~> 0.5.2", only: :test},
+
+      # Microbenchmarking tool
+      {:benchfella, "~> 0.3.2", only: :bench},
+      
+      # compare to other utilities
+      {:combination, "~> 0.0.2", only: [:test, :bench]},
     ]
   end
 

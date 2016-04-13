@@ -8,7 +8,8 @@ Extra Elixir utilities
 
 **this is still in early phase; the api would be changed heavily among the 0.0.x versions **
 
-* e.g. `StreamX.transform` support switching reducer after each reducer call.
+* `StreamX.Stream.transform` support switching reducer after each reducer call.
+* `StreamX.Enum.combination` generate list of combinations
 
 ## Installation
 
