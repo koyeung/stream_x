@@ -4,7 +4,9 @@
 [![Coverage Status](https://coveralls.io/repos/github/koyeung/stream_x/badge.svg?branch=master)](https://coveralls.io/github/koyeung/stream_x?branch=master)
 [![Inline docs](http://inch-ci.org/github/koyeung/stream_x.svg)](http://inch-ci.org/github/koyeung/stream_x)
 
-Extra Elixir Stream utilities
+Extra Elixir utilities
+
+**this is still in early phase; the api would be changed heavily among the 0.0.x versions **
 
 * e.g. `StreamX.transform` support switching reducer after each reducer call.
 
